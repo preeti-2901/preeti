@@ -1,0 +1,44 @@
+
+   
+  const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 }
+];
+   function all(list)
+  let sum=0;
+  let num=3;
+  let average=sum/num
+  for(let i=0;i<list.length();i++){
+  sum=sum+list[i];
+  
+  }
+  return average;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  const books = [
+  { title: "The Catcher in the Rye", author: "J.D. Salinger" },
+  { title: "To Kill a Mockingbird", author: "Harper Lee" },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+  { title: "The Old Man and the Sea", author: "Ernest Hemingway" },
+  { title: "1984", author: "George Orwell" },
+  { title: "Animal Farm", author: "George Orwell" }
+];
+
+function getBooksByAuthor(list,name){
+const result = list.filter((item) => {
+  if(item.author==name){
+    console.log(item.title)
+  }
+})
+return result;
+}
+getBooksByAuthor(books,"George Orwell" )
